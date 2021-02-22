@@ -7,11 +7,12 @@ namespace CGOL {
         public static GameManager Instance { get; private set; }
         public Cell Cellprefab;
 
+
         public Color[] cellColours;
         void Awake() {
             Instance = this;
             Cellprefab = Resources.Load<Cell>(typeof(Cell).Name);
-            cellColours = new Color[2];
+            cellColours = new Color[] { Color.yellow, Color.black };
 
         }
 
